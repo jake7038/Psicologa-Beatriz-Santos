@@ -1,0 +1,192 @@
+body{
+    font-family: fantasy;
+}
+
+.navbar {
+    background-color: coral;
+}
+
+.pacifico{
+    font-family:"Pacifico", Geneva, Tahoma, sans-serif;
+}
+
+#cabecalho .nav .nav-link.active{
+    background-color: azure;
+    color: coral;
+}
+
+#cabecalho .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover,
+.nav-comidas .nav-link.active:hover{
+    color: #fff;
+}
+
+
+
+
+.navbar-brand{
+    font-family:"Pacifico", Geneva, Tahoma, sans-serif;
+    
+}
+
+.navbar-toggler{
+    background-color: #fff;
+}
+
+.section-title{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.section-title span, .text-colored{
+    color: coral;
+}
+
+#sobre-mim,  #entre-em-contato{
+    background-color:#ffeae6 ;
+}
+
+#terapia{
+
+    .card{
+        border-radius: 15%;
+        height: 80%;
+        
+        max-width: 18rem;
+        .subir-circulo{
+            position: relative;
+            bottom: 4em;
+        }
+        .text-danger{
+            color: #212529 !important;
+        }
+        
+        h1{
+            font-size: 4em;
+            display: flex;
+            
+            justify-content: center;
+            i{
+                box-sizing: border-box;
+                bottom: 0.05em;
+                right: 0.23em;
+                position: absolute;
+                color: pink;
+            }
+            .circle{
+                font-family: fantasy;
+                background-color: grey;
+                border-radius: 50%;
+                width: 100px;
+                height: 100px;
+                overflow: hidden;
+                position: relative;
+                align-content: center;
+                
+                color: #fff;
+                
+            }
+        }
+        .card-text{
+            position: relative;
+            bottom: 3.5em;
+        }
+    }
+
+}
+
+
+
+.cards-1{
+    height: 480px;
+    display: flex;
+    align-items: center;
+    background-color: darkslategray;
+}
+
+.card-texto{
+    bottom: 15%!important;
+}
+
+.circle {
+    background-color: #181818;
+    border-radius: 50%;
+    width: 228px;
+    height: 228px;
+    overflow: hidden;
+    position: relative;
+    align-content: center;
+    border: 2px solid #c78f0020;
+    bottom: 15%;
+   
+    .bi-code-slash{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        font-size: 150px;
+        color: rgb(2, 67, 2) ;
+    }
+}
+.social-links li{
+    list-style: none;
+    display: inline;
+}
+
+.social-links a{
+    text-decoration: none;
+}
+
+@media (max-width: 767px) {
+.carousel-item img{
+    height: 280px;
+}
+header button span{
+    font-size: 16px;
+    
+}
+
+#terapia{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    
+    col-sm-12{
+        padding: 0 !important;
+        align-items: center;
+        display: flex !important;
+        justify-content: center !important;
+        position: relative;
+    }
+    .card{
+        margin-left: 8%;
+        display: flex !important;
+        justify-content: center !important;
+        padding: 0;
+        box-sizing: content-box;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+
+header ul{
+    margin-top: 10px;
+}
+#cardapio button{
+        margin-bottom: 16px;
+}
+
+.flip-card:active .flip-card-inner{
+    transform: rotateY(-180deg);
+}
+
+}
+
+.pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
