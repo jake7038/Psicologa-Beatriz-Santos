@@ -46,6 +46,12 @@ body{
     background-color:#ffeae6 ;
 }
 
+.sobre-mim{
+    align-content: center;
+    text-align: justify;
+}
+
+
 #terapia{
 
     .card{
