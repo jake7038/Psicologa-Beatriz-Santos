@@ -1,0 +1,23 @@
+{
+  "name": "psicologa-beatriz-santos",
+  "version": "1.0.0",
+  "description": "Repositório do site da psicóloga Beatriz Santos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jake7038/Psicologa-Beatriz-Santos.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jake7038/Psicologa-Beatriz-Santos/issues"
+  },
+  "homepage": "https://github.com/jake7038/Psicologa-Beatriz-Santos#readme",
+  "dependencies": {
+    "gulp": "^5.0.0",
+    "less": "^4.2.0"
+  }
+}
