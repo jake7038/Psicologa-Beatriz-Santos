@@ -109,19 +109,23 @@
 }
 
 
-.cards-1{
-    height: 480px;
-    display: flex;
-    align-items: center;
-    background-color: darkslategray;
-}
-
-.card-texto{
-    bottom: 15%!important;
+.coluna-blue{
+    background-color: @corazulsecundario;
+    border-radius: 10px;
 }
 
 .relatos{
     background-color: @corrosaprimario;
+    .row{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    img{
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+    }
 }
 
 .contato{
@@ -194,19 +198,26 @@ header button span{
     }
 }
 
+#relatos{
+    p{
+        margin-bottom: 0;
+    }
+    img{
+        margin-bottom: 20px;
+        
+    }
+    .picture-rigth{
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
 
+}
 
 
 header ul{
     margin-top: 10px;
 }
-#cardapio button{
-        margin-bottom: 16px;
-}
 
-.flip-card:active .flip-card-inner{
-    transform: rotateY(-180deg);
-}
 
 }
 
@@ -216,3 +227,6 @@ header ul{
     font-style: normal;
 }
 
+.efeito-scroll{
+    display: hidden;
+}

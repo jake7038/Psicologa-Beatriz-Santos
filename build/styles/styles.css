@@ -84,17 +84,22 @@
   position: relative;
   bottom: 3.5em;
 }
-.cards-1 {
-  height: 480px;
-  display: flex;
-  align-items: center;
-  background-color: darkslategray;
-}
-.card-texto {
-  bottom: 15%!important;
+.coluna-blue {
+  background-color: #aac7e4;
+  border-radius: 10px;
 }
 .relatos {
   background-color: #fbd9e1;
+}
+.relatos .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.relatos img {
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
 }
 .contato {
   background-color: #aac7e4;
@@ -154,18 +159,25 @@
     align-items: center;
     text-align: center;
   }
+  #relatos p {
+    margin-bottom: 0;
+  }
+  #relatos img {
+    margin-bottom: 20px;
+  }
+  #relatos .picture-rigth {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
   header ul {
     margin-top: 10px;
-  }
-  #cardapio button {
-    margin-bottom: 16px;
-  }
-  .flip-card:active .flip-card-inner {
-    transform: rotateY(-180deg);
   }
 }
 .pacifico-regular {
   font-family: "Pacifico", cursive;
   font-weight: 400;
   font-style: normal;
+}
+.efeito-scroll {
+  display: hidden;
 }
