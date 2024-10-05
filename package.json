@@ -4,6 +4,8 @@
   "description": "Repositório do site da psicóloga Beatriz Santos",
   "main": "index.js",
   "scripts": {
+    "gulp": "gulp",
+    "less": "lessc ./src/styles/main.less ./build/styles/styles.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,6 +20,7 @@
   "homepage": "https://github.com/jake7038/Psicologa-Beatriz-Santos#readme",
   "dependencies": {
     "gulp": "^5.0.0",
+    "gulp-imagemin": "^9.1.0",
     "less": "^4.2.0"
   }
 }
