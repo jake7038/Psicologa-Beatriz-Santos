@@ -89,7 +89,7 @@
   border-radius: 10px;
 }
 .relatos {
-  background-color: #fbd9e1;
+  background-color: #aac7e4;
 }
 .relatos .row {
   display: flex;
@@ -125,6 +125,34 @@
 .social-links li {
   list-style: none;
   display: inline;
+}
+#tcc {
+  background-color: #fbd9e1;
+}
+#tcc .row .bloco {
+  padding-bottom: 1em;
+}
+#tcc .row .bloco .card {
+  background-color: #aac7e4;
+}
+#tcc .row .bloco .titulo {
+  color: black;
+  font-weight: bolder;
+  font-size: larger;
+}
+#tcc .row .bloco .card-body-superior {
+  height: 14em;
+  display: flex;
+  justify-content: center;
+  align-items: top;
+}
+#tcc .row .bloco .texto-superior {
+  text-align: justify;
+  justify-content: center;
+  align-items: center;
+}
+#tcc .row .bloco .texto {
+  text-align: justify;
 }
 .social-links a {
   text-decoration: none;
