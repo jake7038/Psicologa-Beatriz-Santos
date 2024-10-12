@@ -89,7 +89,7 @@
   border-radius: 10px;
 }
 .relatos {
-  background-color: #aac7e4;
+  background-color: #fbd9e1;
 }
 .relatos .row {
   display: flex;
@@ -156,6 +156,18 @@
 }
 .social-links a {
   text-decoration: none;
+}
+#outrosServicos {
+  background-color: #aac7e4;
+}
+#outrosServicos .divisao__texto {
+  height: 50em;
+}
+#outrosServicos .card-servicos .titulo {
+  font-weight: bold;
+}
+#outrosServicos .card-servicos .botao {
+  position: relative;
 }
 @media (max-width: 767px) {
   .carousel-item img {
