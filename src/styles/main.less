@@ -202,19 +202,39 @@
 
     background-color: @corazulsecundario;
 
-
+    .card{
+        background-color: @corrosaprimario;
+    }
 
     .divisao__texto{
         height: 50em;
     }
 
     .card-servicos{
+        .row-border{
+            padding-left: 2px;
+            padding-right: 2px;
+            border-bottom: solid #212529 1px;
+        }
+        
         .titulo{
             font-weight: bold;
         }
 
+        .icone{
+            text-align: center;
+        }
         .botao{
             position: relative;
+        }
+        .btn{
+            background-color: @corrosasecundario;
+            color: #181818;
+            font-weight: bold;
+        }
+        .btn:hover{
+            color: #fff;
+            transform: scale(1.1);
         }
     }
 }

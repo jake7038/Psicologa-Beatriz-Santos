@@ -160,14 +160,34 @@
 #outrosServicos {
   background-color: #aac7e4;
 }
+#outrosServicos .card {
+  background-color: #fbd9e1;
+}
 #outrosServicos .divisao__texto {
   height: 50em;
+}
+#outrosServicos .card-servicos .row-border {
+  padding-left: 2px;
+  padding-right: 2px;
+  border-bottom: solid #212529 1px;
 }
 #outrosServicos .card-servicos .titulo {
   font-weight: bold;
 }
+#outrosServicos .card-servicos .icone {
+  text-align: center;
+}
 #outrosServicos .card-servicos .botao {
   position: relative;
+}
+#outrosServicos .card-servicos .btn {
+  background-color: #d9a9a7;
+  color: #181818;
+  font-weight: bold;
+}
+#outrosServicos .card-servicos .btn:hover {
+  color: #fff;
+  transform: scale(1.1);
 }
 @media (max-width: 767px) {
   .carousel-item img {
