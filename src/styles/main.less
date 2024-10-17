@@ -207,22 +207,39 @@
     }
 
     .divisao__texto{
-        height: 50em;
+        height: auto;
     }
 
     .card-servicos{
+        .row{
+            height: 20em;
+        }
         .row-border{
             padding-left: 2px;
             padding-right: 2px;
             border-bottom: solid #212529 1px;
         }
-        
+        .card-subtitle{
+            font-weight: bold;
+            font-size:large;
+        }
+
         .titulo{
             font-weight: bold;
         }
 
-        .icone{
-            text-align: center;
+        .centralizador{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            h6{
+                align-self: first baseline;
+            }
+            .icone{
+                font-size: 5em;
+                color: @corrosasecundario;
+            }
         }
         .botao{
             position: relative;
