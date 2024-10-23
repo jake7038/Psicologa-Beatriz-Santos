@@ -206,6 +206,26 @@
   color: #fff;
   transform: scale(1.1);
 }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #tcc .row .bloco .card-body-superior {
+    height: 20em;
+  }
+  #outrosServicos .card-servicos .centralizador {
+    display: block;
+  }
+  #outrosServicos .card-servicos .centralizador .card-subtitle {
+    text-align: center;
+  }
+  #outrosServicos .card-servicos .row {
+    height: 22em;
+  }
+  #outrosServicos .card-servicos .col-md-0 {
+    display: none;
+  }
+  #outrosServicos .card-servicos .icone {
+    visibility: hidden;
+  }
+}
 @media (max-width: 767px) {
   .carousel-item img {
     height: 280px;
@@ -218,13 +238,6 @@
     justify-content: center;
     text-align: center;
     flex-direction: column;
-  }
-  #terapia col-sm-12 {
-    padding: 0 !important;
-    align-items: center;
-    display: flex !important;
-    justify-content: center !important;
-    position: relative;
   }
   #terapia .card {
     margin-left: 8%;
@@ -245,6 +258,23 @@
   #relatos .picture-rigth {
     margin-bottom: 20px;
     margin-top: 20px;
+  }
+  #tcc .row .bloco .card-body-superior {
+    height: 18em;
+  }
+  #outrosServicos .card-servicos .centralizador {
+    display: block;
+  }
+  #outrosServicos .card-servicos .centralizador .card-subtitle {
+    text-align: center;
+    margin-bottom: 0px !important;
+    padding-top: 0px !important;
+  }
+  #outrosServicos .card-servicos .centralizador .card-subtitle {
+    padding-bottom: 12px;
+  }
+  #outrosServicos .card-servicos .row {
+    height: 25em;
   }
   header ul {
     margin-top: 10px;

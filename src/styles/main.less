@@ -256,6 +256,44 @@
     }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    
+    #tcc{
+        .row{
+    
+            
+            .bloco{
+                .card-body-superior{
+                    height: 20em;
+                }
+            }
+        }
+    }
+    
+    #outrosServicos{
+
+        .card-servicos{
+            .centralizador{
+                display: block;
+                .card-subtitle{
+                    text-align: center;
+                    
+                }
+            }
+            .row{
+                height: 22em;
+            }
+            .col-md-0{
+                display: none;
+            }
+            .icone{
+                visibility: hidden;
+            }
+        }
+    }
+
+
+}
 
 
 @media (max-width: 767px) {
@@ -275,13 +313,6 @@ header button span{
     text-align: center;
     flex-direction: column;
     
-    col-sm-12{
-        padding: 0 !important;
-        align-items: center;
-        display: flex !important;
-        justify-content: center !important;
-        position: relative;
-    }
     .card{
         margin-left: 8%;
         display: flex !important;
@@ -306,10 +337,40 @@ header button span{
         margin-bottom: 20px;
         margin-top: 20px;
     }
-
 }
 
+#tcc{
+    .row{
 
+        
+        .bloco{
+            .card-body-superior{
+                height: 18em;
+            }
+        }
+    }
+}
+
+#outrosServicos{
+
+    .card-servicos{
+        .centralizador{
+            display: block;
+            .card-subtitle{
+                text-align: center;
+                margin-bottom: 0px !important;
+                padding-top: 0px !important;
+            }
+            .card-subtitle{
+                
+                padding-bottom: 12px;
+            }
+        }
+        .row{
+            height: 25em;
+        }
+    }
+}
 
 header ul{
     margin-top: 10px;
