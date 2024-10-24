@@ -45,44 +45,14 @@
 #terapia {
   background-color: #aac7e4;
 }
-#terapia .card {
-  border-radius: 15%;
-  height: 80%;
-  max-width: 18rem;
-}
-#terapia .card .subir-circulo {
-  position: relative;
-  bottom: 4em;
-}
-#terapia .card .text-danger {
-  color: #212529 !important;
-}
-#terapia .card h1 {
-  font-size: 4em;
-  display: flex;
-  justify-content: center;
-}
-#terapia .card h1 i {
-  box-sizing: border-box;
-  bottom: 0.05em;
-  right: 0.23em;
-  position: absolute;
-  color: pink;
-}
-#terapia .card h1 .circle {
-  font-family: fantasy;
-  background-color: grey;
+#terapia .image {
+  width: 300px;
+  height: 300px;
+  align-items: center;
+  margin: auto;
+  display: block;
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  overflow: hidden;
-  position: relative;
-  align-content: center;
-  color: #fff;
-}
-#terapia .card .card-text {
-  position: relative;
-  bottom: 3.5em;
+  border: #fbd9e1 double 12px;
 }
 .coluna-blue {
   background-color: #aac7e4;
@@ -207,6 +177,18 @@
   transform: scale(1.1);
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+  #terapia {
+    background-color: #aac7e4;
+  }
+  #terapia .image {
+    width: 200px;
+    height: 200px;
+    align-items: center;
+    margin: auto;
+    display: block;
+    border-radius: 50%;
+    border: #fbd9e1 double 12px;
+  }
   #tcc .row .bloco .card-body-superior {
     height: 20em;
   }
@@ -260,7 +242,7 @@
     margin-top: 20px;
   }
   #tcc .row .bloco .card-body-superior {
-    height: 18em;
+    height: auto;
   }
   #outrosServicos .card-servicos .centralizador {
     display: block;
@@ -274,7 +256,7 @@
     padding-bottom: 12px;
   }
   #outrosServicos .card-servicos .row {
-    height: 25em;
+    height: auto;
   }
   header ul {
     margin-top: 10px;
