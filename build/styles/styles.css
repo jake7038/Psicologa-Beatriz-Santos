@@ -43,7 +43,8 @@
   text-align: justify;
 }
 #terapia {
-  background-color: #aac7e4;
+  background-color: #da2865;
+  color: #ffff;
 }
 #terapia .image {
   width: 300px;
@@ -52,14 +53,14 @@
   margin: auto;
   display: block;
   border-radius: 50%;
-  border: #fbd9e1 double 12px;
+  border: #17a5a3 double 12px;
 }
 .coluna-blue {
   background-color: #aac7e4;
   border-radius: 10px;
 }
 .relatos {
-  background-color: #fbd9e1;
+  background-color: #aac7e4;
 }
 .relatos .row {
   display: flex;
@@ -137,7 +138,7 @@
   height: auto;
 }
 #outrosServicos .card-servicos .row {
-  height: 20em;
+  height: 22em;
 }
 #outrosServicos .card-servicos .row-border {
   padding-left: 2px;
