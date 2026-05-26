@@ -81,9 +81,7 @@
     border-radius: 10px;
 }
 
-#duvidas{
 
-}
 
 .contato{
 
@@ -273,6 +271,149 @@
 }
 
 
+#duvidas{
+    background-color: @corfundoterapia;
+        .faq-container {
+    max-width: 780px;
+    }
+    h2{
+        color: #ffff;
+    }
+    
+    // ── Lista ────────────────────────────────────────────────
+    .faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    }
+    
+    // ── Item (card) ──────────────────────────────────────────
+    .faq-item {
+    background: @corrosaterapia;
+    color: #ffff;
+    border: 1.5px solid #d9eeee;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.35s ease,
+                border-color 0.35s ease;
+    
+    &:hover {
+        box-shadow: 0 4px 18px rgba(23, 165, 163, 0.12);
+        border-color: lighten(#17a5a3, 20%);
+    }
+    
+    // ── estado aberto ──
+    &.is-open {
+        color: #ffff;
+        border-color: #17a5a3;
+        box-shadow: 0 4px 20px rgba(23, 165, 163, 0.18);
+    
+        .faq-question {
+        color: #ffff;
+        }
+    
+        .faq-icon {
+        background-color:  #e8796b;
+    
+        
+        &::after {
+            transform: rotate(90deg) scaleY(0);
+            opacity: 0;
+        }
+        }
+    }
+    }
+    
+    // ── Botão pergunta ───────────────────────────────────────
+    .faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    
+    width: 100%;
+    padding: 18px 22px;
+    
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #ffff;
+    line-height: 1.4;
+    
+    transition: color 0.35s ease;
+    
+    &:focus-visible {
+        outline: 2px solid #17a5a3;
+        outline-offset: -2px;
+    }
+    }
+    
+    // ── Ícone +/– ────────────────────────────────────────────
+    .faq-icon {
+    flex-shrink: 0;
+    position: relative;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: #e8796b;
+    transition: background-color 0.35s ease,
+                transform 0.35s ease;
+    
+    // traço horizontal
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        background: #fff;
+        border-radius: 2px;
+        transition: transform 0.35s ease,
+                    opacity   0.35s ease;
+    }
+    
+    &::before {
+        width: 10px;
+        height: 2px;
+    }
+    
+    // traço vertical
+    &::after {
+        width: 2px;
+        height: 10px;
+    }
+    }
+    
+    // ── Resposta (drawer) ─────────────────────────────────────
+    .faq-answer {
+    // altura controlada via JS com max-height
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    
+    p {
+        margin: 0;
+        padding: 0 22px 20px;
+        font-family: 'Nunito', sans-serif;;
+        font-size: 0.95rem;
+        color: #ffff;
+        line-height: 1.7;
+        border-top: 1px solid #d9eeee;
+        padding-top: 14px;
+    }
+}
+
+
+}
+
+
+
 @media (max-width: 767px) {
 .carousel-item img{
     height: 280px;
@@ -335,6 +476,8 @@ header button span{
         }
     }
 }
+
+
 
 header ul{
     margin-top: 10px;
