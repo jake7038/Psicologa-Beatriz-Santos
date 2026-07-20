@@ -20,7 +20,7 @@
   "homepage": "https://github.com/jake7038/Psicologa-Beatriz-Santos#readme",
   "dependencies": {
     "gulp": "^5.0.0",
-    "gulp-imagemin": "^9.1.0",
+    "gulp-imagemin": "^6.2.0",
     "less": "^4.2.0"
   }
 }

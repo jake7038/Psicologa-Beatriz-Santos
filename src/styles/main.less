@@ -1,68 +1,102 @@
 @import '_variables';
 
+.section-bg(@bg, @texto: @cor-texto-escuro) {
+    background-color: @bg;
+    color: @texto;
+}
+
+body {
+    font-family: @fonte-texto;
+}
+
+.pacifico {
+    font-family: @fonte-titulo, Geneva, Tahoma, sans-serif;
+}
+
+.pacifico-regular {
+    font-family: @fonte-titulo;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.section-title {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    .text-colored {
+        color: @corrosasecundario;
+    }
+}
+
+.text-colored-primary {
+    color: @corrosaterapia;
+}
+
+.efeito-scroll {
+    display: hidden;
+}
+
+
 .navbar {
-    
     background-color: fade(@corrosasecundario, 90%);
 }
 
-.pacifico{
-    font-family:"Pacifico", Geneva, Tahoma, sans-serif;
+.navbar-brand {
+    font-family: @fonte-titulo, Geneva, Tahoma, sans-serif;
+
+    &,
+    &:hover {
+        color: #fff;
+    }
 }
 
-#cabecalho .nav .nav-link.active{
-    background-color: @corrosaprimario;
-    color: @corrosasecundario;
-}
-
-#cabecalho .nav .nav-link,
-.navbar-brand,
-.navbar-brand:hover,
-.nav-comidas .nav-link.active:hover{
-    color: #fff;
-}
-
-.icone-up{
-    transform-origin: center center;
-}
-.icone-up:hover {
-    transform: scale(1.1);
-}
-
-.navbar-brand{
-    font-family:"Pacifico", Geneva, Tahoma, sans-serif;
-    
-}
-
-.navbar-toggler{
+.navbar-toggler {
     background-color: #fff;
 }
 
-.section-title{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+#cabecalho .nav .nav-link {
+    color: #fff;
+
+    &.active {
+        background-color: @corrosaprimario;
+        color: @corrosasecundario;
+    }
 }
 
-.section-title .text-colored{
-    color: @corrosasecundario;
+.nav-comidas .nav-link.active:hover {
+    color: #fff;
 }
 
-.text-colored-primary{
-    color: @corrosaprimario;
+.icone-up {
+    transform-origin: center center;
+
+    &:hover {
+        transform: scale(1.1);
+    }
 }
 
-#sobre-mim{
-    background-color:@corrosaprimario ;
+
+#sobre-mim {
+    .section-bg(@bg-section-azul, @cor-texto-claro);
+        .foto-perfil {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 50%;
+        display: block;
+    }
+
 }
 
-.sobre-mim{
+.sobre-mim {
     align-content: center;
     text-align: justify;
 }
 
+#terapia {
+    .section-bg(@bg-section-rosa, @cor-texto-escuro);
 
-#terapia{
-    background-color: @corfundoterapia;
-    color: @cortextoterapia;
-    .image{
+    .image {
         width: 300px;
         height: 300px;
         align-items: center;
@@ -71,21 +105,267 @@
         border-radius: 50%;
         border: @corrosaterapia double 12px;
     }
-    
-
 }
 
 
-.coluna-blue{
-    background-color: @corazulsecundario;
+#tcc {
+    .section-bg(@bg-section-azul, @cor-texto-claro);
+
+    .row .bloco {
+        padding-bottom: 1em;
+
+        .card {
+            background-color: @bg-section-rosa;
+            color: @cor-texto-escuro;
+        }
+
+        .titulo {
+            color: @cor-texto-escuro;
+            font-weight: bolder;
+            font-size: larger;
+        }
+
+        .card-body-superior {
+            height: 14em;
+            display: flex;
+            justify-content: center;
+            align-items: top;
+        }
+
+        .texto-superior {
+            text-align: justify;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .texto {
+            text-align: justify;
+        }
+    }
+}
+
+
+#outrosServicos {
+    .section-bg(@bg-section-rosa, @cor-texto-escuro);
+
+    .card {
+        background-color: @corazulsecundario;
+    }
+
+    .divisao__texto {
+        height: auto;
+    }
+
+    .card-servicos {
+        .row {
+            height: 22em;
+
+            &.row-border {
+                padding-left: 2px;
+                padding-right: 2px;
+                border-bottom: solid #212529 1px;
+            }
+        }
+
+        .card-subtitle {
+            font-weight: bold;
+            font-size: large;
+        }
+
+        .titulo {
+            font-weight: bold;
+        }
+
+        .centralizador {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            h6 {
+                align-self: first baseline;
+            }
+
+            .icone {
+                font-size: 5em;
+                color: @corrosasecundario;
+            }
+        }
+
+        .botao {
+            position: relative;
+        }
+
+        .btn {
+            background-color: @corrosasecundario;
+            color: #181818;
+            font-weight: bold;
+
+            &:hover {
+                color: #fff;
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+
+
+#duvidas {
+    .section-bg(@bg-section-azul, @cor-texto-claro);
+
+    h2 {
+        color: @cor-texto-claro;
+    }
+
+    .faq-container {
+        max-width: 780px;
+    }
+
+    .faq-list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .faq-item {
+        background: @corfundoterapia;
+        color: @cor-texto-claro;
+        border: 1.5px solid darken(@corfundoterapia, 8%);
+        border-radius: 14px;
+        overflow: hidden;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        transition: box-shadow 0.35s ease, border-color 0.35s ease;
+
+        &:hover {
+            box-shadow: 0 4px 18px rgba(23, 165, 163, 0.25);
+            border-color: lighten(@corrosaterapia, 10%);
+        }
+
+        &.is-open {
+            border-color: @corrosaterapia;
+            box-shadow: 0 4px 20px rgba(23, 165, 163, 0.3);
+
+            .faq-question {
+                color: @cor-texto-claro;
+            }
+
+            .faq-icon {
+                background-color: @corrosaterapia;
+
+                &::after {
+                    transform: rotate(90deg) scaleY(0);
+                    opacity: 0;
+                }
+            }
+        }
+    }
+
+    .faq-question {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+        width: 100%;
+        padding: 18px 22px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        text-align: left;
+        font-family: @fonte-texto;
+        font-weight: 700;
+        font-size: 1rem;
+        color: @cor-texto-claro;
+        line-height: 1.4;
+        transition: color 0.35s ease;
+
+        &:focus-visible {
+            outline: 2px solid @corrosaterapia;
+            outline-offset: -2px;
+        }
+    }
+
+    .faq-icon {
+        flex-shrink: 0;
+        position: relative;
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        background-color: @corrosaterapia;
+        transition: background-color 0.35s ease, transform 0.35s ease;
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            margin: auto;
+            background: #fff;
+            border-radius: 2px;
+            transition: transform 0.35s ease, opacity 0.35s ease;
+        }
+
+        &::before {
+            width: 10px;
+            height: 2px;
+        }
+
+        &::after {
+            width: 2px;
+            height: 10px;
+        }
+    }
+
+    .faq-answer {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+
+        p {
+            margin: 0;
+            padding: 0 22px 20px;
+            font-size: 0.95rem;
+            color: @cor-texto-claro;
+            line-height: 1.7;
+            border-top: 1px solid rgba(255, 255, 255, 0.3);
+            padding-top: 14px;
+        }
+    }
+}
+
+
+
+.contato {
+    .section-bg(@bg-section-rosa, @cor-texto-escuro);
+}
+
+.social-links {
+    li {
+        list-style: none;
+        display: inline;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.mapa-embed {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    margin-top: 0.75em;
     border-radius: 10px;
-}
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
 
-
-
-.contato{
-
-    background-color: @corazulsecundario;
+    iframe {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
 }
 
 .circle {
@@ -98,400 +378,106 @@
     align-content: center;
     border: 2px solid #c78f0020;
     bottom: 15%;
-    .bi-code-slash{
+
+    .bi-code-slash {
         position: absolute;
         bottom: 0;
         width: 100%;
         font-size: 150px;
-        color: rgb(2, 67, 2) ;
+        color: rgb(2, 67, 2);
     }
 }
-.social-links li{
-    list-style: none;
-    display: inline;
-}
 
-#tcc{
-    background-color: @corrosaprimario;
-    .row{
 
-        
-        .bloco{
-            padding-bottom: 1em;
-            
-            .card{
-                background-color: @corazulsecundario;
-            }
-            .titulo{
-                color: black;
-                font-weight: bolder;
-                font-size: larger;
-            }
 
-            .card-body-superior{
-                height: 14em;
-                display: flex;
-                justify-content: center;
-                align-items: top;
-            }
-            .texto-superior{
-                text-align: justify;
-                
-                justify-content: center;
-                align-items: center;
-            }
-            .texto{
-                text-align: justify;
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #terapia .image {
+        width: 200px;
+        height: 200px;
+        align-items: center;
+        margin: auto;
+        display: block;
+        border-radius: 50%;
+        border: @corrosaterapia double 12px;
+    }
+
+    #tcc .row .bloco .card-body-superior {
+        height: 20em;
+    }
+
+    #outrosServicos .card-servicos {
+        .centralizador {
+            display: block;
+
+            .card-subtitle {
+                text-align: center;
             }
         }
+
+        .row {
+            height: 22em;
+        }
+
+        .col-md-0 {
+            display: none;
+        }
+
+        .icone {
+            visibility: hidden;
+        }
     }
-    
 }
 
-.social-links a{
-    text-decoration: none;
-}
-
-#outrosServicos{
-
-    background-color: @corazulsecundario;
-
-    .card{
-        background-color: @corrosaprimario;
+@media (max-width: 767px) {
+    .carousel-item img {
+        height: 280px;
     }
 
-    .divisao__texto{
+    header {
+        button span {
+            font-size: 16px;
+        }
+
+        ul {
+            margin-top: 10px;
+        }
+    }
+
+    #terapia {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+
+        .card {
+            margin-left: 8%;
+            display: flex !important;
+            justify-content: center !important;
+            padding: 0;
+            box-sizing: content-box;
+            align-items: center;
+            text-align: center;
+        }
+    }
+
+    #tcc .row .bloco .card-body-superior {
         height: auto;
     }
 
-    .card-servicos{
-        .row{
-            height: 22em;
-        }
-        .row-border{
-            padding-left: 2px;
-            padding-right: 2px;
-            border-bottom: solid #212529 1px;
-        }
-        .card-subtitle{
-            font-weight: bold;
-            font-size:large;
-        }
-
-        .titulo{
-            font-weight: bold;
-        }
-
-        .centralizador{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            h6{
-                align-self: first baseline;
-            }
-            .icone{
-                font-size: 5em;
-                color: @corrosasecundario;
-            }
-        }
-        .botao{
-            position: relative;
-        }
-        .btn{
-            background-color: @corrosasecundario;
-            color: #181818;
-            font-weight: bold;
-        }
-        .btn:hover{
-            color: #fff;
-            transform: scale(1.1);
-        }
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1023px){
-    
-
-    #terapia{
-        background-color: @corazulsecundario;
-        .image{
-            width: 200px;
-            height: 200px;
-            align-items: center;
-            margin: auto;
+    #outrosServicos .card-servicos {
+        .centralizador {
             display: block;
-            border-radius: 50%;
-            border: @corrosaprimario double 12px;
-            
-        }
-        
-    
-    }
 
-
-    #tcc{
-        .row{
-    
-            
-            .bloco{
-                .card-body-superior{
-                    height: 20em;
-                }
-            }
-        }
-    }
-    
-    
-
-
-    #outrosServicos{
-
-        .card-servicos{
-            .centralizador{
-                display: block;
-                .card-subtitle{
-                    text-align: center;
-                    
-                }
-            }
-            .row{
-                height: 22em;
-            }
-            .col-md-0{
-                display: none;
-            }
-            .icone{
-                visibility: hidden;
-            }
-        }
-    }
-
-
-}
-
-
-#duvidas{
-    background-color: @corfundoterapia;
-        .faq-container {
-    max-width: 780px;
-    }
-    h2{
-        color: #ffff;
-    }
-    
-    // ── Lista ────────────────────────────────────────────────
-    .faq-list {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    }
-    
-    // ── Item (card) ──────────────────────────────────────────
-    .faq-item {
-    background: @corrosaterapia;
-    color: #ffff;
-    border: 1.5px solid #d9eeee;
-    border-radius: 14px;
-    overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-    transition: box-shadow 0.35s ease,
-                border-color 0.35s ease;
-    
-    &:hover {
-        box-shadow: 0 4px 18px rgba(23, 165, 163, 0.12);
-        border-color: lighten(#17a5a3, 20%);
-    }
-    
-    // ── estado aberto ──
-    &.is-open {
-        color: #ffff;
-        border-color: #17a5a3;
-        box-shadow: 0 4px 20px rgba(23, 165, 163, 0.18);
-    
-        .faq-question {
-        color: #ffff;
-        }
-    
-        .faq-icon {
-        background-color:  #e8796b;
-    
-        
-        &::after {
-            transform: rotate(90deg) scaleY(0);
-            opacity: 0;
-        }
-        }
-    }
-    }
-    
-    // ── Botão pergunta ───────────────────────────────────────
-    .faq-question {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 16px;
-    
-    width: 100%;
-    padding: 18px 22px;
-    
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    text-align: left;
-    
-    font-family: 'Nunito', sans-serif;
-    font-weight: 700;
-    font-size: 1rem;
-    color: #ffff;
-    line-height: 1.4;
-    
-    transition: color 0.35s ease;
-    
-    &:focus-visible {
-        outline: 2px solid #17a5a3;
-        outline-offset: -2px;
-    }
-    }
-    
-    // ── Ícone +/– ────────────────────────────────────────────
-    .faq-icon {
-    flex-shrink: 0;
-    position: relative;
-    width: 22px;
-    height: 22px;
-    border-radius: 50%;
-    background-color: #e8796b;
-    transition: background-color 0.35s ease,
-                transform 0.35s ease;
-    
-    // traço horizontal
-    &::before,
-    &::after {
-        content: '';
-        position: absolute;
-        inset: 0;
-        margin: auto;
-        background: #fff;
-        border-radius: 2px;
-        transition: transform 0.35s ease,
-                    opacity   0.35s ease;
-    }
-    
-    &::before {
-        width: 10px;
-        height: 2px;
-    }
-    
-    // traço vertical
-    &::after {
-        width: 2px;
-        height: 10px;
-    }
-    }
-    
-    // ── Resposta (drawer) ─────────────────────────────────────
-    .faq-answer {
-    // altura controlada via JS com max-height
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-    
-    p {
-        margin: 0;
-        padding: 0 22px 20px;
-        font-family: 'Nunito', sans-serif;;
-        font-size: 0.95rem;
-        color: #ffff;
-        line-height: 1.7;
-        border-top: 1px solid #d9eeee;
-        padding-top: 14px;
-    }
-}
-
-
-}
-
-
-
-@media (max-width: 767px) {
-.carousel-item img{
-    height: 280px;
-}
-header button span{
-    font-size: 16px;
-    
-}
-
-
-
-#terapia{
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    
-    .card{
-        margin-left: 8%;
-        display: flex !important;
-        justify-content: center !important;
-        padding: 0;
-        box-sizing: content-box;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-}
-
-
-#tcc{
-    .row{
-
-        
-        .bloco{
-            .card-body-superior{
-                height: auto;
-            }
-        }
-    }
-}
-
-#outrosServicos{
-
-    .card-servicos{
-        .centralizador{
-            display: block;
-            .card-subtitle{
+            .card-subtitle {
                 text-align: center;
                 margin-bottom: 0px !important;
                 padding-top: 0px !important;
-            }
-            .card-subtitle{
-                
                 padding-bottom: 12px;
             }
         }
-        .row{
+
+        .row {
             height: auto;
         }
     }
-}
-
-
-
-header ul{
-    margin-top: 10px;
-}
-
-
-}
-
-.pacifico-regular {
-    font-family: "Pacifico", cursive;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.efeito-scroll{
-    display: hidden;
 }
