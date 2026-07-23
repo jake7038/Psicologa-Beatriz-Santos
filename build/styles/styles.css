@@ -13,16 +13,16 @@ body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .section-title .text-colored {
-  color: #d9a9a7;
+  color: #C97B8C;
 }
 .text-colored-primary {
-  color: #17a5a3;
+  color: #2A9D8F;
 }
 .efeito-scroll {
   display: hidden;
 }
 .navbar {
-  background-color: rgba(217, 169, 167, 0.9);
+  background-color: rgba(201, 123, 140, 0.9);
 }
 .navbar-brand {
   font-family: 'Pacifico', cursive, Geneva, Tahoma, sans-serif;
@@ -38,8 +38,8 @@ body {
   color: #fff;
 }
 #cabecalho .nav .nav-link.active {
-  background-color: #fbd9e1;
-  color: #d9a9a7;
+  background-color: #FBEAE1;
+  color: #C97B8C;
 }
 .nav-comidas .nav-link.active:hover {
   color: #fff;
@@ -51,7 +51,7 @@ body {
   transform: scale(1.1);
 }
 #sobre-mim {
-  background-color: #17a5a3;
+  background-color: #2A9D8F;
   color: #ffffff;
 }
 #sobre-mim .foto-perfil {
@@ -67,7 +67,7 @@ body {
   text-align: justify;
 }
 #terapia {
-  background-color: #fbd9e1;
+  background-color: #FBEAE1;
   color: #222222;
 }
 #terapia .image {
@@ -77,17 +77,17 @@ body {
   margin: auto;
   display: block;
   border-radius: 50%;
-  border: #17a5a3 double 12px;
+  border: #2A9D8F double 12px;
 }
 #tcc {
-  background-color: #17a5a3;
+  background-color: #2A9D8F;
   color: #ffffff;
 }
 #tcc .row .bloco {
   padding-bottom: 1em;
 }
 #tcc .row .bloco .card {
-  background-color: #fbd9e1;
+  background-color: #FBEAE1;
   color: #222222;
 }
 #tcc .row .bloco .titulo {
@@ -110,11 +110,11 @@ body {
   text-align: justify;
 }
 #outrosServicos {
-  background-color: #fbd9e1;
+  background-color: #FBEAE1;
   color: #222222;
 }
 #outrosServicos .card {
-  background-color: #aac7e4;
+  background-color: #BFE0DA;
 }
 #outrosServicos .divisao__texto {
   height: auto;
@@ -145,13 +145,13 @@ body {
 }
 #outrosServicos .card-servicos .centralizador .icone {
   font-size: 5em;
-  color: #d9a9a7;
+  color: #C97B8C;
 }
 #outrosServicos .card-servicos .botao {
   position: relative;
 }
 #outrosServicos .card-servicos .btn {
-  background-color: #d9a9a7;
+  background-color: #C97B8C;
   color: #181818;
   font-weight: bold;
 }
@@ -160,7 +160,7 @@ body {
   transform: scale(1.1);
 }
 #duvidas {
-  background-color: #17a5a3;
+  background-color: #2A9D8F;
   color: #ffffff;
 }
 #duvidas h2 {
@@ -175,9 +175,9 @@ body {
   gap: 12px;
 }
 #duvidas .faq-item {
-  background: #da2865;
+  background: #1E6E68;
   color: #ffffff;
-  border: 1.5px solid #b92054;
+  border: 1.5px solid #154e4a;
   border-radius: 14px;
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
@@ -185,17 +185,17 @@ body {
 }
 #duvidas .faq-item:hover {
   box-shadow: 0 4px 18px rgba(23, 165, 163, 0.25);
-  border-color: #1dd2cf;
+  border-color: #35c5b4;
 }
 #duvidas .faq-item.is-open {
-  border-color: #17a5a3;
+  border-color: #2A9D8F;
   box-shadow: 0 4px 20px rgba(23, 165, 163, 0.3);
 }
 #duvidas .faq-item.is-open .faq-question {
   color: #ffffff;
 }
 #duvidas .faq-item.is-open .faq-icon {
-  background-color: #17a5a3;
+  background-color: #2A9D8F;
 }
 #duvidas .faq-item.is-open .faq-icon::after {
   transform: rotate(90deg) scaleY(0);
@@ -220,7 +220,7 @@ body {
   transition: color 0.35s ease;
 }
 #duvidas .faq-question:focus-visible {
-  outline: 2px solid #17a5a3;
+  outline: 2px solid #2A9D8F;
   outline-offset: -2px;
 }
 #duvidas .faq-icon {
@@ -229,7 +229,7 @@ body {
   width: 22px;
   height: 22px;
   border-radius: 50%;
-  background-color: #17a5a3;
+  background-color: #2A9D8F;
   transition: background-color 0.35s ease, transform 0.35s ease;
 }
 #duvidas .faq-icon::before,
@@ -265,7 +265,7 @@ body {
   padding-top: 14px;
 }
 .contato {
-  background-color: #fbd9e1;
+  background-color: #FBEAE1;
   color: #222222;
 }
 .social-links li {
@@ -317,7 +317,7 @@ body {
     margin: auto;
     display: block;
     border-radius: 50%;
-    border: #17a5a3 double 12px;
+    border: #2A9D8F double 12px;
   }
   #tcc .row .bloco .card-body-superior {
     height: 20em;
